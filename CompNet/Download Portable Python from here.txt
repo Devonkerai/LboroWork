@@ -1,0 +1,15 @@
+http://sourceforge.net/projects/winpython/files/
+
+Download it, extract it.
+
+Use the "WinPython Command Prompt" as a console to run the files
+
+Change the properties of our client_gui and server_gui files to use our installed version
+of Python (I think it's the "pythonw" one).
+
+Copy the files files into the 'python-2.7.9' folder.
+
+Then run via command line and it works.
+
+and edit used notepad++. We can probably get Sublime text 2 portable but I cant
+be bothered to do it at the moment.
