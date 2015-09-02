@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+".\wm\stm32f3xx_hal.o"
+".\wm\stm32f3xx_hal_cortex.o"
+".\wm\stm32f3xx_hal_dma.o"
+".\wm\stm32f3xx_hal_gpio.o"
+".\wm\stm32f3xx_hal_rcc.o"
+".\wm\stm32f3xx_hal_spi.o"
+".\wm\stm32f3xx_hal_i2c.o"
+".\wm\main.o"
+".\wm\buttonpanel.o"
+".\wm\buzzer.o"
+".\wm\door.o"
+".\wm\motor.o"
+".\wm\ports.o"
+".\wm\processcontroller.o"
+".\wm\sevensegdisplay.o"
+".\wm\timer.o"
+".\wm\washingoperations.o"
+".\wm\stm32f3_discovery.o"
+".\wm\stm32f3xx_it.o"
+".\wm\system_stm32f3xx.o"
+".\wm\startup_stm32f303xc.o"
+".\wm\board_startup.o"
+--library_type=microlib --strict --scatter ".\WM\WM.sct"
+
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WM.map" -o .\WM\WM.axf
